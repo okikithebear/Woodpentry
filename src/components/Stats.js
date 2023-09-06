@@ -1,23 +1,13 @@
 import React, { useEffect } from 'react';
 import { stats } from '../data';
 import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 const Stats = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
-
   const controls = useAnimation();
 
   useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    } else {
-      controls.start('hidden');
-    }
-  }, [inView, controls]);
+    controls.start('visible');
+  }, [controls]);
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -29,7 +19,7 @@ const Stats = () => {
   };
 
   return (
-    <div className='bg-accent rounded-[20px] p-12' ref={ref}>
+    <div className='bg-accent rounded-[20px] p-12'>
       <div className='flex flex-wrap gap-y-8'>
         {stats.map((item, index) => {
           return (
