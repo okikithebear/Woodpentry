@@ -20,6 +20,8 @@ const NewItemsSlider = () => {
           spaceBetween: 20,
         },
       }}
+      loop={true} // Enable looping
+      loopFillGroupWithBlank={true}
     >
       {newInStore.products.map((product, index) => {
         return (
