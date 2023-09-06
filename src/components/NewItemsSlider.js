@@ -13,7 +13,7 @@ const NewItemsSlider = () => {
       breakpoints={{
         320: {
           slidesPerView: 2,
-          spaceBetween: 18,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 3,
@@ -25,7 +25,7 @@ const NewItemsSlider = () => {
         return (
           <SwiperSlide className='max-w-[265px]' key={index}>
             <div>
-              <img src={product.image.type} alt='' />
+              <img src={product.image.type} alt='' className='max-w-full' />
               <div className='absolute text-white bottom-[20px] w-ful text-center text-[18px] lg:text-2xl font-medium capitalize'>
                 {product.name}
               </div>

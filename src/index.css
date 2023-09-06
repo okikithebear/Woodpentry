@@ -20,3 +20,56 @@
 .border-brownish-gold {
   border-color: #daa520; /* Brownish gold color */
 }
+
+/* Common styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif; /* Set your preferred font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Limit body overflow to hide horizontal scrollbar on small screens */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  h1 {
+    font-size: 24px; /* Adjust heading font size */
+  }
+  /* Add similar rules for other text elements as needed */
+}
+
+/* Container Width */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Ensure containers are responsive */
+  }
+}
+
+/* Adjust Padding and Margins */
+@media (max-width: 768px) {
+  .element {
+    padding: 10px; /* Reduce padding as needed */
+    margin: 5px; /* Reduce margins as needed */
+  }
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto;
+}
+
+/* Hide Overflowing Elements */
+@media (max-width: 768px) {
+  .overflowing-element {
+    display: none; /* Hide the element on smaller screens */
+  }
+}
