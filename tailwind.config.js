@@ -38,5 +38,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    // Enable the scroll behavior utility
+    scrollBehavior: false,
+  },
 };

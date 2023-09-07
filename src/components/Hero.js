@@ -47,7 +47,10 @@ const Hero = () => {
           variants={buttonVariants}
           whileHover='hover'
         >
-          {buttonText}
+          <a href='https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA=='>
+            {' '}
+            {buttonText}
+          </a>
         </motion.button>
         <div>
           <Stats />

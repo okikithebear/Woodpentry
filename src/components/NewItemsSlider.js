@@ -13,15 +13,13 @@ const NewItemsSlider = () => {
       breakpoints={{
         320: {
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 18,
         },
         768: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
       }}
-      loop={true} // Enable looping
-      loopFillGroupWithBlank={true}
     >
       {newInStore.products.map((product, index) => {
         return (

@@ -38,15 +38,15 @@ export const navigation = [
   },
   {
     name: 'about',
-    href: 'about',
+    href: '#about',
   },
   {
     name: 'features',
-    href: 'features',
+    href: '#features',
   },
   {
     name: 'contact',
-    href: 'contact',
+    href: '#footer',
   },
 ];
 

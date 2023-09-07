@@ -24,8 +24,10 @@
 /* Common styles for all screen sizes */
 
 /* Limit body overflow to hide horizontal scrollbar on small screens */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Logo from '../assets/img/logo.svg';
+import Logo from '../assets/img/Logo.png';
 
 import { CgMenuRight, CgClose } from 'react-icons/cg';
 import { navigation } from '../data';
@@ -18,13 +18,13 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-primary  py-4 lg:py-6' : 'bg-none'
-      } fixed left-0 w-full py-8 z-10 transition-all duration-200`}
+        bg ? 'bg-white py-4 lg:py-6' : 'bg-none'
+      } fixed left-0 w-full py-4 z-10 transition-all duration-300`}
     >
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           <a href='https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA=='>
-            <img className='h-6 lg:h-8' src={Logo} alt='' />
+            <img className='h-14 w-20 lg:h-14 lg:w-28' src={Logo} alt='' />
           </a>
           <div
             onClick={() => setMobileNav(!mobileNav)}

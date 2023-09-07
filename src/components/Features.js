@@ -26,7 +26,7 @@ const Features = () => {
   };
 
   return (
-    <section className='bg-gray-100 py-24 lg:py-10'>
+    <section id='about' className='bg-gray-100 py-24 lg:py-10'>
       <div className='container mx-auto '>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
           <div>
