@@ -1,40 +1,27 @@
 import React from 'react';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import { newInStore } from '../data';
-const NewItemsSlider = () => {
+
+const NewItemsGrid = () => {
   return (
-    <Swiper
-      grabCursor={true}
-      breakpoints={{
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 18,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      }}
-    >
-      {newInStore.products.map((product, index) => {
-        return (
-          <SwiperSlide className='max-w-[265px]' key={index}>
-            <div className='relative'>
-              <img src={product.image.type} alt='' className='max-w-full' />
-              <div className='absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize'>
-                {product.name}
-              </div>
+    <div className='flex justify-center'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-40'>
+        {newInStore.products.map((product, index) => (
+          <div key={index} className='relative'>
+            <div className='aspect-w-1 aspect-h-1'>
+              <img
+                src={product.image.type}
+                alt={product.name}
+                className='object-cover w-full h-full' // Maintain square shape
+              />
             </div>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+            <div className='absolute text-white bottom-2 left-2 right-2 text-center text-[18px] lg:text-2xl font-medium capitalize'>
+              {product.name}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default NewItemsSlider;
+export default NewItemsGrid;

@@ -16,6 +16,8 @@ import ChairImg from './assets/img/chair.png';
 import BedImg from './assets/img/bed.png';
 import CupboardImg from './assets/img/cupboard.png';
 import LightingImg from './assets/img/lighting.png';
+import BathroomImg from './assets/img/bathroom.jpg';
+import LampstandImg from './assets/img/lampstand.jpg';
 import Product1Img from './assets/img/products/product-1.png';
 import Product2Img from './assets/img/products/product-2.png';
 import Product3Img from './assets/img/products/product-3.png';
@@ -34,11 +36,11 @@ import Avatar3Img from './assets/img/avatar-3.png';
 export const navigation = [
   {
     name: 'home',
-    href: 'home',
+    href: 'hero',
   },
   {
     name: 'about',
-    href: '#about',
+    href: '#about-me',
   },
   {
     name: 'features',
@@ -125,6 +127,14 @@ export const newInStore = {
     {
       name: 'lighting',
       image: <LightingImg />,
+    },
+    {
+      name: 'Bathroom',
+      image: <BathroomImg />,
+    },
+    {
+      name: 'lampstand',
+      image: <LampstandImg />,
     },
   ],
 };

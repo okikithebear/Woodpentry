@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-import Logo from '../assets/img/Logo.png';
+import Logo from '../assets/img/LOGOTP.png';
 
-import { CgMenuRight, CgClose } from 'react-icons/cg';
+// import { CgMenuRight, CgClose } from 'react-icons/cg';
 import { navigation } from '../data';
-import NavMobile from './NavMobile';
+// import NavMobile from './NavMobile';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false);
+  // const [mobileNav, setMobileNav] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -24,14 +24,18 @@ const Header = () => {
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           <a href='https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA=='>
-            <img className='h-14 w-20 lg:h-14 lg:w-28' src={Logo} alt='' />
+            <img
+              className='h-14 w-20 lg:h-20 lg:w-40 mx-auto md:mx-0 font-extrabold'
+              src={Logo}
+              alt=''
+            />
           </a>
-          <div
+          {/* <div
             onClick={() => setMobileNav(!mobileNav)}
             className='text-2xl text-accent md:hidden lg:text-3xl cursor-pointer'
           >
             {mobileNav ? <CgClose /> : <CgMenuRight />}
-          </div>
+          </div> */}
           <nav className='hidden md:flex'>
             <ul className='md:flex md:gap-x-12'>
               {navigation.map((item, index) => {
@@ -48,13 +52,13 @@ const Header = () => {
               })}
             </ul>
           </nav>
-          <div
+          {/* <div
             className={`${
               mobileNav ? 'left-0' : '-left-full'
             } md:hidden fixed bottom-0 w-full max-w-xs h-screen transition-all`}
           >
             <NavMobile />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
