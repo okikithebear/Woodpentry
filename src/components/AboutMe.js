@@ -13,7 +13,7 @@ const AboutMe = () => {
             />
           </div>
           <div className='order-1 text-left'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-6'>About Me</h2>
+            <h2 className='text-4xl font-bold text-gray-800 mb-6'>About Us</h2>
             <p className='text-lg text-gray-700 leading-relaxed'>
               Hello, I'm{' '}
               <span className='text-accent font-semibold'>[Your Name]</span>,
