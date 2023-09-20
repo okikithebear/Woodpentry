@@ -4,15 +4,17 @@ import { footer } from '../data';
 
 const Footer = () => {
   return (
-    <footer id='footer' className='bg-primary text-white py-8'>
+    <footer id='footer' className='bg-gray-100 text-black py-8'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row justify-between items-center border-b border-opacity-75 border-gray-700 pb-4 lg:pb-8 mb-8'>
-          <a href='https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA=='>
-            {/* <h4 className='capitalize font-bold lg:text-xl'>Woodpentry</h4> */}
-            <img src={Logo} alt='logo' className='w-36 h-20 mt-4' />
+        <div className='flex flex-col lg:flex-row justify-center items-center border-b border-opacity-75 border-gray-700 pb-4 lg:pb-8 mb-8'>
+          <a
+            href='https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA=='
+            className='text-center'
+          >
+            <img src={Logo} alt='logo' className='w-32 h-24 mt-1' />
           </a>
 
-          <div className='flex flex-row gap-4 mt-4 lg:mt-0'>
+          <div className='flex flex-row gap-4 mt-1 lg:mt-0'>
             {footer.social.map((item, index) => (
               <a
                 href={item.href}
@@ -29,11 +31,14 @@ const Footer = () => {
           <p>
             Contact us at{' '}
             <a
-              href='mailto:your.email@gmail.com'
+              href='mailto:info@woodpentry.org'
               className='text-accent hover:text-white'
             >
-              your.email@gmail.com
+              info@woodpentry.org
             </a>
+          </p>
+          <p>
+            Call us <span className='text-accent'>08146546391</span>
           </p>
         </div>
       </div>

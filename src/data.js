@@ -1,8 +1,8 @@
 // import icons
 import {
-  IoLogoYoutube,
-  IoLogoFacebook,
-  IoLogoGithub,
+  // IoLogoYoutube,
+  // IoLogoFacebook,
+  // IoLogoGithub,
   IoLogoInstagram,
   IoMdAddCircle,
   IoIosCheckmarkCircle,
@@ -332,22 +332,22 @@ export const newsletter = {
 
 export const footer = {
   social: [
-    {
-      icon: <IoLogoYoutube />,
-      href: '#',
-    },
+    // {
+    //   icon: <IoLogoYoutube />,
+    //   href: '#',
+    // },
     {
       icon: <IoLogoInstagram />,
-      href: '#',
+      href: 'https://instagram.com/woodpentryltd?igshid=MzRIODBiNWFIZA==',
     },
-    {
-      icon: <IoLogoGithub />,
-      href: '#',
-    },
-    {
-      icon: <IoLogoFacebook />,
-      href: '#',
-    },
+    // {
+    //   icon: <IoLogoGithub />,
+    //   href: '#',
+    // },
+    // {
+    //   icon: <IoLogoFacebook />,
+    //   href: '#',
+    // },
   ],
   copyright: 'FurniShop 2022 - All Rights Reserved.',
 };
