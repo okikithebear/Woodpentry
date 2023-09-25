@@ -4,7 +4,7 @@ import { footer } from '../data';
 
 const Footer = () => {
   return (
-    <footer id='footer' className='bg-gray-100 text-black py-8'>
+    <footer id='footer' className='bg-gray-200 text-black py-8'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row justify-center items-center border-b border-opacity-75 border-gray-700 pb-4 lg:pb-8 mb-8'>
           <a

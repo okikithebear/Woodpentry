@@ -36,20 +36,20 @@ import Avatar3Img from './assets/img/avatar-3.png';
 export const navigation = [
   {
     name: 'home',
-    href: 'hero',
+    href: '/',
   },
   {
     name: 'about',
-    href: '#about-me',
+    href: '/about',
   },
-  {
-    name: 'features',
-    href: '#features',
-  },
-  {
-    name: 'contact',
-    href: '#footer',
-  },
+  // {
+  //   name: 'features',
+  //   href: '#features',
+  // },
+  // {
+  //   name: 'contact',
+  //   href: '#footer',
+  // },
 ];
 
 export const hero = {

@@ -36,7 +36,7 @@ const Features = () => {
               className='w-full h-full rounded-lg shadow-xl'
             />
           </div>
-          <div>
+          <div className='px-10'>
             <motion.h2
               className='text-3xl font-semibold mb-2 lg:mb-4'
               initial='hidden'

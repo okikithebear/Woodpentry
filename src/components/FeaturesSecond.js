@@ -8,7 +8,7 @@ const FeaturesSecond = () => {
     <section className='bg-gray-100 py-8 md:py-24'>
       <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
-          <div className='order-2 '>
+          <div className='order-2 px-2'>
             <img
               src={image.type}
               alt='Feature'
