@@ -15,7 +15,7 @@ import Home from './components/home';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <div>
           <Header />
           {/* <Hero /> */}
