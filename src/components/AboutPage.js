@@ -24,15 +24,15 @@ const AboutPage = () => {
             <p className='text-lg text-gray-700 leading-relaxed'>
               Hello, I'm{' '}
               <span className='text-accent font-semibold'>Ighenumah Joel</span>,
-              the proud owner of{' '}
+              the Creative director of{' '}
               <span className='text-accent font-semibold'>Woodpentry</span>
               .
               <br />
               <br />
               With a deep passion for craftsmanship and an unwavering love for
-              creating stunning furniture pieces, I've had the privilege of
+              creating stunning furniture pieces, We have had the privilege of
               serving our community for over{' '}
-              <span className='text-accent font-semibold'>[X years]</span>.
+              <span className='text-accent font-semibold'>5 years</span>.
               <br />
               <br />
               Our mission is simple: to provide you with meticulously
