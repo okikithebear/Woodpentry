@@ -7,7 +7,7 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '1.5rem',
-        // lg: '3rem',
+        lg: '3rem',
       },
     },
     screens: {
@@ -34,7 +34,21 @@ module.exports = {
         newsletter: 'url("/src/assets/img/newsletter.png")',
       },
       dropShadow: {
-        primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
+        primary: '0px 4px 10px rgba(15, 27, 51, 0.05)',
+      },
+      animation: {
+        'slide-up': 'slideUp 0.5s ease-out',
+        bounce: 'bounce 0.5s ease-out',
+      },
+      keyframes: {
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        bounce: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
       },
     },
   },

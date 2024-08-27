@@ -61,7 +61,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-44 items-center mt-10'>
-          <div className='md:col-span-1 ml-2 text-center'>
+          <div className='md:col-span-1 ml-2 lg:ml-0 text-center lg:text-start'>
             {/* <h2 className='text-4xl font-bold text-gray-800 mb-2'>
               Our Designer
             </h2> */}
@@ -78,7 +78,7 @@ const AboutPage = () => {
               <span className='text-accent font-semibold'>Design Partner</span>
             </p>
           </div>
-          <div className='md:col-span-1 ml-28'>
+          <div className='md:col-span-1 ml-28 '>
             <motion.img
               src={DesignerImage}
               alt='Designer'

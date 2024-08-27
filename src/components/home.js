@@ -4,6 +4,7 @@ import Features from './Features';
 import NewItems from './NewItems';
 import FeaturesSecond from './FeaturesSecond';
 import Testimonial from './Testimonial';
+import ImageGallery from './ImageGallery';
 
 function home() {
   return (
@@ -13,7 +14,7 @@ function home() {
       <Features />
       <NewItems />
       <FeaturesSecond />
-
+      <ImageGallery />
       <Testimonial />
     </div>
   );
